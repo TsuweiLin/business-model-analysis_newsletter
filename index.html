@@ -12,77 +12,220 @@
       background: #0b1020;
       color: #f4f4f5;
     }
-    .container { max-width: 680px; margin: 0 auto; padding: 60px 24px 80px; }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 72px 28px 96px;
+    }
     .tagline {
-      display: inline-block; padding: 4px 14px;
-      border-radius: 999px; border: 1px solid #27272a;
-      font-size: 12px; color: #71717a; margin-bottom: 24px; letter-spacing: 0.6px;
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 999px;
+      border: 1px solid #27272a;
+      font-size: 14px;
+      color: #71717a;
+      margin-bottom: 24px;
+      letter-spacing: 0.6px;
     }
-    h1 { font-size: 32px; font-weight: 700; margin: 0 0 14px; line-height: 1.3; letter-spacing: -0.5px; }
-    .subtitle { font-size: 16px; color: #a1a1aa; line-height: 1.8; margin-bottom: 40px; }
-    .features { list-style: none; padding: 0; margin: 0 0 36px; display: flex; flex-direction: column; gap: 14px; }
-    .features li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: #d4d4d8; line-height: 1.6; }
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      margin: 0 0 18px;
+      line-height: 1.3;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: #a1a1aa;
+      line-height: 1.9;
+      margin-bottom: 44px;
+    }
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 42px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 17px;
+      color: #d4d4d8;
+      line-height: 1.8;
+    }
     .features li .icon {
-      flex-shrink: 0; width: 22px; height: 22px;
-      background: #18181b; border: 1px solid #27272a; border-radius: 6px;
-      display: flex; align-items: center; justify-content: center; font-size: 12px; margin-top: 1px;
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      margin-top: 2px;
     }
-    .divider { border: none; border-top: 1px solid #18181b; margin: 36px 0; }
-    .meta-row { display: flex; flex-wrap: wrap; gap: 24px; margin-bottom: 40px; }
-    .meta-item { font-size: 13px; }
-    .meta-item .label { color: #52525b; margin-bottom: 3px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; }
-    .meta-item .value { color: #e4e4e7; }
+    .divider {
+      border: none;
+      border-top: 1px solid #18181b;
+      margin: 42px 0;
+    }
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      margin-bottom: 44px;
+    }
+    .meta-item {
+      font-size: 16px;
+    }
+    .meta-item .label {
+      color: #52525b;
+      margin-bottom: 6px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    .meta-item .value {
+      color: #e4e4e7;
+    }
     .subscribe-box {
-      background: #111827; border: 1px solid #1f2937;
-      border-radius: 16px; padding: 32px 28px; margin-bottom: 20px;
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 36px 32px;
+      margin-bottom: 24px;
     }
-    .subscribe-box h3 { font-size: 18px; font-weight: 600; margin: 0 0 6px; }
-    .subscribe-box p { font-size: 14px; color: #6b7280; margin: 0 0 24px; line-height: 1.6; }
-    .input-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .subscribe-box h3 {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0 0 10px;
+    }
+    .subscribe-box p {
+      font-size: 16px;
+      color: #6b7280;
+      margin: 0 0 24px;
+      line-height: 1.75;
+    }
+    .input-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
     .input-row input[type="email"] {
-      flex: 1; min-width: 200px;
-      background: #0b1020; border: 1px solid #27272a; border-radius: 10px;
-      padding: 12px 16px; font-size: 14px; color: #f4f4f5; outline: none; transition: border-color 0.2s;
+      flex: 1;
+      min-width: 200px;
+      background: #0b1020;
+      border: 1px solid #27272a;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 16px;
+      color: #f4f4f5;
+      outline: none;
+      transition: border-color 0.2s;
     }
     .input-row input[type="email"]::placeholder { color: #3f3f46; }
     .input-row input[type="email"]:focus { border-color: #6366f1; }
     .input-row button {
-      background: #6366f1; color: #fff; border: none; border-radius: 10px;
-      padding: 12px 24px; font-size: 14px; font-weight: 600; cursor: pointer;
-      transition: background 0.2s, transform 0.1s; white-space: nowrap;
+      background: #6366f1;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 14px 26px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      white-space: nowrap;
     }
     .input-row button:hover { background: #4f46e5; }
     .input-row button:active { transform: scale(0.98); }
-    .success-msg { display: none; text-align: center; padding: 20px 0 4px; }
-    .success-msg .check { font-size: 36px; margin-bottom: 10px; }
-    .success-msg h4 { font-size: 18px; margin: 0 0 6px; }
-    .success-msg p { font-size: 14px; color: #6b7280; margin: 0; }
-    .note { font-size: 12px; color: #3f3f46; line-height: 1.7; text-align: center; }
+    .success-msg {
+      display: none;
+      text-align: center;
+      padding: 24px 0 4px;
+    }
+    .success-msg .check {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+    .success-msg h4 {
+      font-size: 22px;
+      margin: 0 0 8px;
+    }
+    .success-msg p {
+      font-size: 16px;
+      color: #6b7280;
+      margin: 0;
+      line-height: 1.75;
+    }
+    .note {
+      font-size: 14px;
+      color: #3f3f46;
+      line-height: 1.8;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="tagline">📬 Email 獨家週報</div>
     <h1>高效變現商模創業解析</h1>
-    <p class="subtitle">每週一封信，拆解 AI 自動化工作流如何變現，<br />以及一人公司與 SaaS 微創業從零到第一筆收入的完整路徑。</p>
+    <p class="subtitle">
+      【每週一封深度解析：教你用最簡單、最高效的變現商模，開始打造自己的創業收入】
+    </p>
+
     <ul class="features">
-      <li><span class="icon">📌</span><span>1 個「個人自動化工作流 → 變現」真實案例拆解</span></li>
-      <li><span class="icon">🛠</span><span>1 個可直接抄作業的 SaaS ／一人公司創業點子，附工具清單與切入路徑</span></li>
-      <li><span class="icon">⚙️</span><span>我實際在用的 AI 工具設定與腳本實戰（含 Perplexity Comet 自動部署、n8n、低程式工作流等）</span></li>
-      <li><span class="icon">💡</span><span>傳統產業 ✕ AI 的未解問題 → 你可以切入的商業機會分析</span></li>
+      <li>
+        <span class="icon">📌</span>
+        <span>【個人自動化工作流 → 變現】真實案例拆解</span>
+      </li>
+      <li>
+        <span class="icon">🛠</span>
+        <span>【SaaS 創業點子】可直接模仿，附工具清單與切入路徑</span>
+      </li>
+      <li>
+        <span class="icon">⚙️</span>
+        <span>【AI 變現應用】涵蓋 Openclaw 龍蝦、n8n、Make.com 等實戰工具</span>
+      </li>
+      <li>
+        <span class="icon">💡</span>
+        <span>【傳統產業的未解問題】你可以切入的商業機會分析</span>
+      </li>
     </ul>
+
     <hr class="divider" />
+
     <div class="meta-row">
-      <div class="meta-item"><div class="label">發刊頻率</div><div class="value">每週一封</div></div>
-      <div class="meta-item"><div class="label">內容風格</div><div class="value">實戰導向，不灌水</div></div>
-      <div class="meta-item"><div class="label">適合誰看</div><div class="value">想多一條收入管道的上班族、創業者、自由工作者</div></div>
+      <div class="meta-item">
+        <div class="label">發刊頻率</div>
+        <div class="value">每週一封</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">內容風格</div>
+        <div class="value">實戰導向，不灌水</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">適合誰看</div>
+        <div class="value">想創業或打造副業的上班族，特別是正在焦慮被 AI 取代的文組專業人士</div>
+      </div>
     </div>
+
     <div class="subscribe-box">
       <h3>免費訂閱週報</h3>
       <p>留下你的 Email，每週準時收到，隨時可退訂。</p>
       <form id="subscribeForm" onsubmit="submitForm(event)">
         <div class="input-row">
-          <input type="email" id="emailInput" placeholder="your@email.com" required />
+          <input
+            type="email"
+            id="emailInput"
+            placeholder="your@email.com"
+            required
+          />
           <button type="submit">訂閱免費週報</button>
         </div>
       </form>
@@ -92,17 +235,22 @@
         <p>感謝你的訂閱，第一封信很快就會出現在你的收件匣。</p>
       </div>
     </div>
+
     <p class="note">
       ✦ 你的 Email 只會用於寄送這份週報，不會外流或用於其他用途。<br />
       ✦ 每封信底部都附有退訂連結，隨時一鍵退出，零風險。
     </p>
   </div>
+
   <script>
     function submitForm(e) {
       e.preventDefault();
       var email = document.getElementById('emailInput').value;
-      var url = 'https://docs.google.com/forms/d/e/1FAIpQLScCBx5hsvpHb0TVZXlyWM27tjG4WSk-w5-jV2-s4nv3aRgizg/formResponse?entry.567581353=' + encodeURIComponent(email) + '&submit=Submit';
-      fetch(url, { method: 'POST', mode: 'no-cors' }).catch(function(){});
+      var url =
+        'https://docs.google.com/forms/d/e/1FAIpQLScCBx5hsvpHb0TVZXlyWM27tjG4WSk-w5-jV2-s4nv3aRgizg/formResponse?entry.567581353=' +
+        encodeURIComponent(email) +
+        '&submit=Submit';
+      fetch(url, { method: 'POST', mode: 'no-cors' }).catch(function () {});
       document.getElementById('subscribeForm').style.display = 'none';
       document.getElementById('successMsg').style.display = 'block';
     }
