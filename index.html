@@ -91,9 +91,7 @@
       margin-bottom: 36px;
     }
 
-    .meta-item {
-      font-size: 15px;
-    }
+    .meta-item { font-size: 15px; }
 
     .meta-item .label {
       color: #52525b;
@@ -172,22 +170,9 @@
       padding: 20px 0 4px;
     }
 
-    .success-msg .check {
-      font-size: 40px;
-      margin-bottom: 12px;
-    }
-
-    .success-msg h4 {
-      font-size: 20px;
-      margin: 0 0 8px;
-    }
-
-    .success-msg p {
-      font-size: 15px;
-      color: #6b7280;
-      margin: 0;
-      line-height: 1.75;
-    }
+    .success-msg .check { font-size: 40px; margin-bottom: 12px; }
+    .success-msg h4 { font-size: 20px; margin: 0 0 8px; }
+    .success-msg p { font-size: 15px; color: #6b7280; margin: 0; line-height: 1.75; }
 
     .note {
       font-size: 13px;
@@ -198,91 +183,46 @@
 
     /* 桌機版 */
     @media (min-width: 600px) {
-      .container {
-        padding: 72px 28px 96px;
-      }
-
-      h1 {
-        font-size: 40px;
-      }
-
-      .subtitle {
-        font-size: 18px;
-      }
-
-      .features li {
-        font-size: 17px;
-      }
-
-      .meta-row {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 28px;
-      }
-
-      .meta-item {
-        font-size: 16px;
-      }
-
-      .subscribe-box {
-        padding: 36px 32px;
-      }
-
-      .subscribe-box h3 {
-        font-size: 22px;
-      }
-
-      .subscribe-box p {
-        font-size: 16px;
-      }
-
-      .input-row {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-
-      .input-row input[type="email"] {
-        flex: 1;
-        min-width: 200px;
-        width: auto;
-      }
-
-      .input-row button {
-        width: auto;
-        font-size: 16px;
-        padding: 14px 26px;
-      }
-
-      .note {
-        font-size: 14px;
-      }
+      .container { padding: 72px 28px 96px; }
+      h1 { font-size: 40px; }
+      .subtitle { font-size: 18px; }
+      .features li { font-size: 17px; }
+      .meta-row { flex-direction: row; flex-wrap: wrap; gap: 28px; }
+      .meta-item { font-size: 16px; }
+      .subscribe-box { padding: 36px 32px; }
+      .subscribe-box h3 { font-size: 22px; }
+      .subscribe-box p { font-size: 16px; }
+      .input-row { flex-direction: row; flex-wrap: wrap; }
+      .input-row input[type="email"] { flex: 1; min-width: 200px; width: auto; }
+      .input-row button { width: auto; font-size: 16px; padding: 14px 26px; }
+      .note { font-size: 14px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="tagline">📬 Email 獨家週報</div>
+    <p class="tagline">📬 Email 獨家週報</p>
+
     <h1>高效變現商模創業解析</h1>
-    <p class="subtitle">
-      【每週一封深度解析：教你用最簡單、最高效的變現商模，開始打造自己的創業收入】
-    </p>
+
+    <p class="subtitle">【每週一封深度解析：教你用最簡單、最高效的變現商模，開始打造自己的創業收入】</p>
 
     <ul class="features">
-      >
+      <li>
         <span class="icon">📌</span>
-        <span>【個人自動化工作流 → 變現】真實案例拆解</span>
+        【個人自動化工作流 → 變現】真實案例拆解
       </li>
-      >
+      <li>
         <span class="icon">🛠️</span>
-        <span>【SaaS 創業點子】可直接模仿，附工具清單與切入路徑</span>
+        【SaaS 創業點子】可直接模仿，附工具清單與切入路徑
       </li>
-      >
+      <li>
         <span class="icon">⚙️</span>
-        <span>【AI 變現應用】涵蓋 Openclaw 龍蝦、n8n、Make.com 等實戰工具</span>
+        【AI 變現應用】涵蓋 Openclaw 龍蝦、n8n、Make.com 等實戰工具
       </li>
-      >
+      <li>
         <span class="icon">💡</span>
-        <span>【傳統產業的未解問題】你可以切入的商業機會分析</span>
+        【傳統產業的未解問題】你可以切入的商業機會分析
       </li>
     </ul>
 
@@ -308,16 +248,11 @@
       <p>留下你的 Email，每週準時收到，隨時可退訂。</p>
       <form id="subscribeForm" onsubmit="submitForm(event)">
         <div class="input-row">
-          <input
-            type="email"
-            id="emailInput"
-            placeholder="your@email.com"
-            required
-          />
+          <input type="email" id="emailInput" placeholder="your@email.com" required />
           <button type="submit">訂閱免費週報</button>
         </div>
       </form>
-      <div class="success-msg" id="successMsg">
+      <div id="successMsg" class="success-msg">
         <div class="check">✅</div>
         <h4>已成功訂閱！</h4>
         <p>感謝你的訂閱，第一封信很快就會出現在你的收件匣。</p>
@@ -334,10 +269,7 @@
     function submitForm(e) {
       e.preventDefault();
       var email = document.getElementById('emailInput').value;
-      var url =
-        'https://docs.google.com/forms/d/e/1FAIpQLScCBx5hsvpHb0TVZXlyWM27tjG4WSk-w5-jV2-s4nv3aRgizg/formResponse?entry.567581353=' +
-        encodeURIComponent(email) +
-        '&submit=Submit';
+      var url = 'https://docs.google.com/forms/d/e/1FAIpQLScCBx5hsvpHb0TVZXlyWM27tjG4WSk-w5-jV2-s4nv3aRgizg/formResponse?entry.567581353=' + encodeURIComponent(email) + '&submit=Submit';
       fetch(url, { method: 'POST', mode: 'no-cors' }).catch(function () {});
       document.getElementById('subscribeForm').style.display = 'none';
       document.getElementById('successMsg').style.display = 'block';
